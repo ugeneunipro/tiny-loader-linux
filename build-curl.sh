@@ -4,7 +4,8 @@ PREFIX=`pwd`
 
 cd curl-7.66.0
 
-./configure --prefix=$PREFIX \
+./configure --prefix=${PREFIX} \
+    --disable-shared \
     --enable-static \
     --disable-ftp --disable-file --disable-ldap --disable-ldaps \
     --disable-rtsp --disable-proxy --disable-dict --disable-telnet \
@@ -17,6 +18,9 @@ cd curl-7.66.0
     --without-axtls --without-ca-bundle --without-ca-path --without-ca-fallback \
     --without-libpsl --without-libmetalink --without-libssh2 --without-librtmp \
     --without-winidn --without-libidn --without-nghttp2 --without-zsh-functions-dir --without-zlib
+
+make clean
 make
 make install
+
 cd ..

@@ -3,9 +3,9 @@ Simple tiny loader of UGENE installer.
 It downloads `big` loader and executes them
 
 # Download curl
-```
-download curl sources and unzip them to directory curl
-```
+
+download curl sources and unzip them to directory *`curl`*
+
 
 # Build curl
 ```bash

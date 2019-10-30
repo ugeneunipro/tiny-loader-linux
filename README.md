@@ -1,12 +1,13 @@
-# tiny-loader-linux
+# Tiny UGENE loader for linux
 Simple tiny loader of UGENE installer.
+It downloads `big` loader and executes them
 
 # Download curl
 ```
 download curl sources and unzip them to directory curl
-``
+```
 
-### Build curl
+# Build curl
 ```bash
 PREFIX=`pwd`
 cd curl
@@ -27,7 +28,7 @@ make
 make install
 cd ..
 ```
-### Build tiny loader for linux
+# Build tiny loader for linux
 ```
 g++ \
     -L/usr/X11R6/lib \
@@ -46,4 +47,4 @@ g++ \
     -o tinyLoader
 ```
 
-# see build.sh for actual options
+# See build.sh for actual options

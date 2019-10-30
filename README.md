@@ -1,10 +1,9 @@
-# Tiny UGENE loader for linux
-Simple tiny loader of UGENE installer.
-It downloads `big` loader and executes them
+# Tiny UGENE loader for Linux
+This simple loader downloads a bigger UGENE installer that uses the Qt Installer Framework.
 
 # Download curl
 
-download curl sources and unzip them to directory *`curl`*
+Download curl sources and unzip them into the *`curl`* directory.
 
 
 # Build curl
